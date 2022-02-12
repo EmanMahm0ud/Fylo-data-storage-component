@@ -25,7 +25,7 @@ main {
 }
 
 p {
-    color: whitesmoke;
+    color: white;
     font-weight: 400;
     font-size: 10pt;
     font-family: 'Raleway', sans-serif;
@@ -36,7 +36,7 @@ img {
 }
 
 .first-card {
-    width: 300px;
+    width: 20%;
     padding: 30px;
     margin: 0 20px;
     border-radius: 10px;
@@ -70,7 +70,7 @@ img {
 }
 
 .second-card {
-    width: 500px;
+    width: 35%;
     padding: 30px;
     border-radius: 10px;
     position: relative;
@@ -110,28 +110,33 @@ img {
     height: 80%;
     margin-right: 3px;
     border-radius: 50%;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .badge {
     position: absolute;
-    top: -20%;
-    right: 10%;
-    width: 150px;
+    top: -25%;
+    right: 30px;
+    width: 30%;
     padding: 10px;
     border-radius: 10px;
     border-bottom-right-radius: 0;
-    background-color: whitesmoke;
+    text-align: center;
+    background-color: white;
 }
 
 .badge p {
     color: hsl(229, 57%, 11%);
     font-size: 8pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .badge .large {
+    padding-right: 5%;
     font-weight: 700;
-    font-size: 20pt;
+    font-size: 24pt;
 }
 
 .triangle {
@@ -140,13 +145,13 @@ img {
     top: 100%;
     width: 0;
     height: 0;
-    border-top: 20px solid whitesmoke;
+    border-top: 20px solid white;
     border-left: 20px solid transparent;
 }
 
 /* ---------------------------------- */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
     body {
         background-image: url(../images/bg-mobile.png);
         background-size: 100% 100%;
@@ -158,8 +163,24 @@ img {
         width: 300px;
     }
 
-    .second-card, .first-card {
+    .first-card, .second-card {
         width: 100%;
         margin: 20px 0;
+    }
+
+    .second-card {
+        padding-bottom: 40px;
+    }
+
+    .badge {
+        width: 50%;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-bottom-right-radius: 10px;
+    }
+
+    .triangle {
+        display: none;
     }
 }
