@@ -125,9 +125,11 @@ img {
     background-color: white;
 }
 
-.badge p {
+.badge h1 {
     color: hsl(229, 57%, 11%);
     font-size: 8pt;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
